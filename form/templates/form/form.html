@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Registration Form</h1>
+        <form action="" method="POST">
+
+            <label class="form-label" for="name">First Name</label>
+            <input class="form-control mb-2" type="text" name="name" placeholder="Name..." required>
+
+            <label class="form-label" for="surname">Surname</label>
+            <input class="form-control mb-2" type="text" name="surname" placeholder="Surname..." required>
+
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-control mb-2" type="email" name="email" placeholder="Email.." required>
+
+            <label class="form-label" for="school">School</label>
+            <select class="form-select w-100 mb-2" id="school" required>
+                <option selected disabled value="">Choose your school...</option>
+                <option>...</option>
+              </select>
+
+            <label for="date_of_birth">Date Of Birth</label>
+            <input class="form-control mb-2" type="date" name="date_of_birth" placeholder="Date Of Birth">
+
+            <div class="form-check mt-2">
+                <input class="form-check-input mb-2" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+            
+
+            <input class="btn btn-primary btn-lg mt-3 w-100" type="submit" value="Register" id="submit">
+        </form>
+    </div>
+
+    
+</body>
+
+</html>
